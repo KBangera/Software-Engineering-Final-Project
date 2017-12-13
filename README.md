@@ -89,8 +89,8 @@ System requirements
   }
   
 -In the androidmanifest.xml make sure that you have 
-1. <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-2. <uses-permission android:name="android.permission.INTERNET"/>
+1. < uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+2. < uses-permission android:name="android.permission.INTERNET"/>
 
 - In the androidmanifest.xml file you also have defined this which are useful in connecting to your backend(back4app parse-api)
 
@@ -102,13 +102,13 @@ System requirements
 
 - In the string.xml file make sure that you have 
 
-<string name="back4app_server_url">https://parseapi.back4app.com/</string>
+< string name="back4app_server_url">https://parseapi.back4app.com/</string>
     
 <!-- Change the following strings as required -->
 
-<string name="back4app_app_id">efK08GFEEpuz0IEViSEYXDAPcLUQn3e8QYbybeW2</string>
+< string name="back4app_app_id">efK08GFEEpuz0IEViSEYXDAPcLUQn3e8QYbybeW2</string>
     
-<string name="back4app_client_key">4yQ26Qtl8zkzoUBKs7hCsh01l5c4zqlR6QZVnRF6</string>
+< string name="back4app_client_key">4yQ26Qtl8zkzoUBKs7hCsh01l5c4zqlR6QZVnRF6</string>
 
 - After testing all the app functionalities
 
