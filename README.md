@@ -19,19 +19,33 @@ Objectives of EasyHealth
 Installation of EasyHealth(and blood donor which would be used in EasyHealth)
 ==============================================================================
 -Install Android Studio.
+
 -Download, unzip and import the Doctor-Patient-Nurse-Appointment-system into the Android Studio.
+
 -Download, unzip and import the Health-care-for-Android-master into a separate window of Android Studio for including the blood donor features.
+
 -To run both the applications, follow the below procedures to run the apps.
+
 -In Android Studio, click the Tools menu, select Android, and click AVD Manager to open the Android Virtual Device Manager.
+
 -Create a new emulator by clicking the New button.
+
 -Open the Android Virtual Device Manager again. 
+
 -Now select the created emulator and click on start.
+
 -Database for the EasyHealth app is located at https://www.back4app.com/
+
 -Database credentials are username/email address-jashwanthreddy09@gmail.com and password-easyhealth.
+
 -After logging in, click on dashboard.
+
 -On the left hand navigation, under the browser tab, you would find a list of tables(Installation, Roles, Session, User, Appointments, Prescriptions) that we use as backend for our app.
+
 -Database for the BloodDonor app is located at https://console.firebase.google.com
--Database credentials are username/email address-rishitmuthyala888@gmail.com and password-jfkB_2016.
+
+-Database credentials are username/email address - rishitmuthyala888@gmail.com and password - jfkB_2016.
+
 -After logging in, select Trail1 from the projects.
 -On the left hand navigation, select Database from the left hand navigation.
 -Then on the right hand side, you can select and the explore the bloodbankdata, donordata and hospitaldata tables that are being used for the Blood Donor.
