@@ -45,7 +45,7 @@ Installation of EasyHealth(and blood donor which would be used in EasyHealth)
 
 -Database for the EasyHealth app is located at https://www.back4app.com/
 
--Database credentials are username/email address-jashwanthreddy09@gmail.com and password-easyhealth.
+-Database credentials are username/email address- jashwanthreddy09@gmail.com and password - easyhealth.
 
 -After logging in, click on dashboard.
 
@@ -79,11 +79,13 @@ System requirements
 
 
  repositories {
+ 
       mavenCentral()
       jcenter()
         maven {
 	              url "http://maven.google.com"
               }
+	      
   }
   
 -In the androidmanifest.xml make sure that you have 
@@ -118,31 +120,21 @@ In the string.xml make sure that u have
     
 <string name="back4app_client_key">4yQ26Qtl8zkzoUBKs7hCsh01l5c4zqlR6QZVnRF6</string>
 
-
 -After testing all the app functionalities
 
-, login to the back4app with the url 
-	https://www.back4app.com/ and
+- login to the back4app with the url https://www.back4app.com/ and
 
- credentials
- username:jashwanthreddy09@gmail.com 
-password:easyhealth
+- credentials: username:jashwanthreddy09@gmail.com  password:easyhealth
 
- 
--Now click on click on dashboard
--
+- Now click on dashboard
 
-Now you can find information related to sessions in session table 
-
+- Now you can find information related to sessions in session table 
 
 -And user related information in user table
 
-
 -Installation related information in installation table
 
-
 -Appointments related information in appointment table
-
 
 -Prescription related information in prescription table
 
