@@ -94,11 +94,11 @@ System requirements
 
 - In the androidmanifest.xml file you also have defined this which are useful in connecting to your backend(back4app parse-api)
 
-1.<meta-data android:name="com.parse.SERVER_URL" android:value="@string/back4app_server_url" />
+1. < meta-data android:name="com.parse.SERVER_URL" android:value="@string/back4app_server_url" />
 
-2.<meta-data android:name="com.parse.APPLICATION_ID" android:value="@string/back4app_app_id" />
+2. < meta-data android:name="com.parse.APPLICATION_ID" android:value="@string/back4app_app_id" />
   
-3.<meta-data android:name="com.parse.CLIENT_KEY" android:value="@string/back4app_client_key" />
+3. < meta-data android:name="com.parse.CLIENT_KEY" android:value="@string/back4app_client_key" />
 
 - In the string.xml file make sure that you have 
 
