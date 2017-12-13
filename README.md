@@ -89,18 +89,18 @@ System requirements
   }
   
 -In the androidmanifest.xml make sure that you have 
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-<uses-permission android:name="android.permission.INTERNET"/>
+1. <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+2. <uses-permission android:name="android.permission.INTERNET"/>
 
 - In the androidmanifest.xml file you also have defined this which are useful in connecting to your backend(back4app parse-api)
 
-<meta-data android:name="com.parse.SERVER_URL" android:value="@string/back4app_server_url" />
+1.<meta-data android:name="com.parse.SERVER_URL" android:value="@string/back4app_server_url" />
 
-<meta-data android:name="com.parse.APPLICATION_ID" android:value="@string/back4app_app_id" />
+2.<meta-data android:name="com.parse.APPLICATION_ID" android:value="@string/back4app_app_id" />
   
-<meta-data android:name="com.parse.CLIENT_KEY" android:value="@string/back4app_client_key" />
+3.<meta-data android:name="com.parse.CLIENT_KEY" android:value="@string/back4app_client_key" />
 
-- In the string.xml file make sure that u have 
+- In the string.xml file make sure that you have 
 
 <string name="back4app_server_url">https://parseapi.back4app.com/</string>
     
@@ -110,7 +110,7 @@ System requirements
     
 <string name="back4app_client_key">4yQ26Qtl8zkzoUBKs7hCsh01l5c4zqlR6QZVnRF6</string>
 
--After testing all the app functionalities
+- After testing all the app functionalities
 
 - login to the back4app with the url https://www.back4app.com/ and
 
@@ -120,12 +120,12 @@ System requirements
 
 - Now you can find information related to sessions in session table 
 
--And user related information in user table
+- And user related information in user table
 
--Installation related information in installation table
+- Installation related information in installation table
 
--Appointments related information in appointment table
+- Appointments related information in appointment table
 
--Prescription related information in prescription table
+- Prescription related information in prescription table
 
--This clearly shows that all the requirements are satisfied
+- This clearly shows that all the requirements are satisfied
