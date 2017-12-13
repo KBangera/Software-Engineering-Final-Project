@@ -5,14 +5,23 @@ Screenshots of EasyHealth
 Objectives of EasyHealth
 =========================
 -Select a doctor from the list of doctors provided for the patient.
+
 -On selection of doctor, they can see the details of the doctor.
+
 -Enable patients to book appointments with doctors of their preference.
+
 -Patients can view prescriptions.
+
 -Doctors can view their appointments on their dashboard.
+
 -On click of any appointment, doctor can view the details of the patient. 
+
 -The doctor can then write the prescriptions to the selected patients.
+
 -Patients too have a view related to appointments where they can view all the appointments that they have booked.
+
 -On click of the blood donor button in the left hand navigation of patient profile, users will be redirected to blood donor where they can use the features of the blood donor.
+
 -Blood Donor shows the list of blood banks, hospitals and nearby blood donor details along with contact details for each one.
 
 
