@@ -13,6 +13,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
 
+/* This class takes the password field in addition to Email, First Name
+* and Last Name that are already passed through intents. */
 public class EnterPassword extends AppCompatActivity {
 
     String EMAIL;
@@ -57,6 +59,7 @@ public class EnterPassword extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /* Move to the EnterUserType class with the intent paramters. */
     public void moveToUserType(View view)
     {
         Intent intent = new Intent(this, EnterUserType.class);

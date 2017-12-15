@@ -24,6 +24,8 @@ import com.parse.ParseUser;
 import java.util.ArrayList;
 import java.util.List;
 
+/*This is used by the nurse during a new user account creation. The spinner is
+* populated with the list of doctors the nurse which choose to report to. */
 public class NurseReportsToDoctor extends AppCompatActivity  {
     Button continueBtn;
     Spinner sp;

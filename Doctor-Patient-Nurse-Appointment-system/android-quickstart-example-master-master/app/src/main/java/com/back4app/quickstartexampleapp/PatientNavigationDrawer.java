@@ -27,6 +27,9 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
+/*This is the home page patient will be able to view when he logins successfully
+* with his credentials. This can further redirect to patient Home, appointments, prescriptions
+* or the Blood Bank information application. */
 public class PatientNavigationDrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 

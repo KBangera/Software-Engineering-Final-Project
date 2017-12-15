@@ -29,6 +29,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/* This is implemented as a Listview  view which contains prescription details like
+* doctor, daily doses, reason etc.. */
 public class PatientPrescriptions extends ListActivity implements AdapterView.OnItemClickListener {
     ListView mlistview;
     ArrayAdapter<String> adapter;

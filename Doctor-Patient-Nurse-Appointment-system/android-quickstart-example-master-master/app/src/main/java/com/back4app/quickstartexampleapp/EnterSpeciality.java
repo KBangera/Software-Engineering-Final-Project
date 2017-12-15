@@ -11,7 +11,8 @@ import android.widget.EditText;
 
 import com.parse.ParseUser;
 
-
+/* This is used by the doctor class to store his specialisation information which is added as
+* an extra column in the user database table */
 public class EnterSpeciality extends AppCompatActivity {
 
     EditText t1;

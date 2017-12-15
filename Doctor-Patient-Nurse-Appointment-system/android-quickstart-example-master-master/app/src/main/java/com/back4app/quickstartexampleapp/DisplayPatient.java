@@ -19,6 +19,8 @@ import com.parse.ParseUser;
 
 import java.util.List;
 
+/* Display List of  Patients  which include FirstName and LastName
+  List View Activity. This is used by the doctor to view the patients information. */
 public class DisplayPatient extends AppCompatActivity {
     public final static String EXTRA_pid = "com.back4app.quickstartexampleapp.pid";
     String pid;
@@ -38,6 +40,8 @@ public class DisplayPatient extends AppCompatActivity {
         t5 = (TextView) findViewById(R.id.textView5);
         t6 = (TextView) findViewById(R.id.textView6);
 
+        /* Send a parse Query with the object Id as that of the patient
+         */
         //Log.e("posts",pid);
         ParseQuery<ParseUser> userQ = ParseUser.getQuery();
         userQ.whereEqualTo("objectId",pid);

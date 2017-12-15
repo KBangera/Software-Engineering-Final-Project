@@ -15,6 +15,8 @@ import android.widget.Toast;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
+/* This class includes fields where doctos writes prescriptions medicines,
+* which is stored in the prescriptions table of Parse Server database.*/
 public class WritePrescription extends AppCompatActivity {
 
     String pid;

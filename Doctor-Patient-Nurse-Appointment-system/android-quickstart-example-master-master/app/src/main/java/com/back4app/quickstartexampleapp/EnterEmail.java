@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.content.Intent;
 
+/* This is used to authenticate user with the email address */
 public class EnterEmail extends AppCompatActivity {
 
     @Override
@@ -51,6 +52,8 @@ public class EnterEmail extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /* Move to Next Viw which contains the Name information. Pass the paramter
+    * email address to the next View.*/
     public void moveToName(View view) {
         EditText editText = (EditText)findViewById(R.id.editText);
         Intent intent = new Intent(this, EnterName.class);

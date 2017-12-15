@@ -21,6 +21,7 @@ import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
+/* This class classifies the user as either a Doctor, Nurse or a Patient*/
 public class EnterUserType extends AppCompatActivity {
 
     String userType;

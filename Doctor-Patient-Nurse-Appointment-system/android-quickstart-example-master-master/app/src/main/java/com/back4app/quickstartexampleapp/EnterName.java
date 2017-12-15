@@ -13,6 +13,8 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.util.Log;
 
+/* This is the next Activity which takes email address to go a step further
+* for authentication/ new user creation */
 public class EnterName extends AppCompatActivity {
     String EMAIL;
 

@@ -11,6 +11,9 @@ import android.view.View;
 import com.parse.ParseObject;
 import android.widget.Toast;
 
+/* This class displays the prescriptions that can be viewed by the nurse under the doctor
+* she reports to. This can be useful later for her to send push notifcations about appointment
+* changes / health tips to the patients. */
 public class NurseViewPrescriptions extends AppCompatActivity implements RecycleViewNurseViewPrescriptions.CustomOnClickRecycleViewNursePrescriptionsViewListener{
 
     @Override

@@ -23,6 +23,9 @@ import com.parse.ParseException;
 import java.util.Map;
 import java.util.HashMap;
 
+/* This is the page nurse will view after a successful  login with
+* the credentials. This contains Nurse Home, Send Notifications or view prescriptions
+* activity */
 public class NurseNavigationDrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     Intent intent;

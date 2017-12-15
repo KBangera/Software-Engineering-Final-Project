@@ -25,7 +25,10 @@ import com.parse.SignUpCallback;
 
 import java.util.List;
 
-
+/* This page includes the signin of an already exisiting user or will
+* redirect to the creation of a new user account. In the oncreate method
+* initialise the Parse setting with the installtion ID, which can be unique to
+* each Mobile device.*/
 public class MainActivity extends AppCompatActivity {
 
     public final static String EXTRA_EMAIL = "com.back4app.quickstartexampleapp.EMAIL";

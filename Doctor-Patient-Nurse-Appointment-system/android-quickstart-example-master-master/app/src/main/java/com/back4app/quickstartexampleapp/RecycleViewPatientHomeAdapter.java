@@ -24,7 +24,8 @@ import java.util.Map;
 /**
  * Created by jashwanthreddy on 2/14/17.
  */
-
+/* This class is redirected from patient navigation drawer to view the list of doctors
+* he can choose to book appointments. */
 public class RecycleViewPatientHomeAdapter extends RecyclerView.Adapter<RecycleViewPatientHomeAdapter.ViewHolder> {
     private List<ParseObject> mDataset;
     RecycleViewNurseViewPrescriptions mRecycleViewAdapter;

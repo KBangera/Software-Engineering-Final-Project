@@ -18,6 +18,7 @@ import java.util.List;
  * Created by jashwanthreddy on 11/27/17.
  */
 
+/*This is implemented as a recycle view for the nurse to view the list of patient prescriptons.*/
 public class RecycleViewNursePrescriptionsViewAdapter extends RecyclerView.Adapter<RecycleViewNursePrescriptionsViewAdapter.ViewHolder> {
     private List<ParseObject> mDataset;
     private List<ParseUser> PDataset;

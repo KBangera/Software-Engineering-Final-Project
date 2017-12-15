@@ -18,6 +18,8 @@ import com.parse.ParseUser;
 
 import java.util.List;
 
+/* Display Detailed information about doctor which include First Name, Last Name, Speciality,
+ Address of Hospital */
 public class DisplayDoc extends AppCompatActivity {
     public String docId;
     public String docName;
@@ -38,6 +40,8 @@ public class DisplayDoc extends AppCompatActivity {
         Intent intent = getIntent();
         docName = intent.getStringExtra(PatientHome2.EXTRA_selectedDoc);
 
+        /* Send a parse query to filter based on userType, Doctor Name and fill the textfields
+        *  with the information */
         ParseQuery<ParseUser> userQuery = ParseUser.getQuery();
         userQuery.whereEqualTo("userType", "Doctor");
         userQuery.whereEqualTo("Fname",docName.split(" ")[0].trim());
@@ -85,9 +89,10 @@ public class DisplayDoc extends AppCompatActivity {
 
     }
 
+    /* Go to New Activity to book and appointment and pass the Doctor ID,
+    * patient Id to be stored in the appointment table */
     public void makeAppointment(View view)
     {
-
         ParseUser cuser = ParseUser.getCurrentUser();
         String cid=cuser.getObjectId();
         Intent intent = new Intent(this, MakeAppointment.class);

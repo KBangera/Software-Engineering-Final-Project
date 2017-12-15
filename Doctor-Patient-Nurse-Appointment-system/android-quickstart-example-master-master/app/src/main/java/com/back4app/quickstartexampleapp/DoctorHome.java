@@ -54,6 +54,9 @@ public class DoctorHome extends ListActivity implements AdapterView.OnItemClickL
         installation.put("GCMSenderId", "1030057213987");
         ParseQuery<ParseUser> curquery = ParseUser.getQuery();
         curquery.whereEqualTo("userType", "Doctor");
+        /* Create unique channel for each doctor. The patient will use this channel
+        to subscribe to updates from the doctor . These are stored in an array of strings
+        in the installation table */
         curquery.findInBackground(new FindCallback<ParseUser>() {
             @Override
             public void done(List<ParseUser> objects, ParseException e) {
@@ -174,7 +177,7 @@ public class DoctorHome extends ListActivity implements AdapterView.OnItemClickL
         //Intent intent = new Intent(this, DisplayDoc.class);
         //intent.putExtra(PatientHome.EXTRA_selectedDoc, res2);
         //startActivity(intent);
-
+        /* Transition to Display Patient Activity */
         Intent intent = new Intent(DoctorHome.this, DisplayPatient.class);
         intent.putExtra(DoctorHome.EXTRA_patientid2, res2.split(" ")[0].trim());
         startActivity(intent);

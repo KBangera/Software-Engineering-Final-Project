@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
+/* This class stores thr Hospital information in the Doctor user where he/she works*/
 public class EnterHospitalDet extends AppCompatActivity {
 
     EditText t1,t2;

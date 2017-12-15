@@ -19,6 +19,9 @@ import android.widget.TextView;
 
 import com.parse.ParseUser;
 
+/* This displays the Nurse information which includes
+* her name, email, doctor she/he reports to. This is an navigation drawer
+* activity which is triggered from NurseNavigationDrawer. */
 public class NurseHome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     Intent intent;

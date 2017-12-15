@@ -13,7 +13,9 @@ import android.widget.Toast;
 
 import com.parse.ParseObject;
 
-
+/* This creates a new entry in the Appointment table. This can maitain
+* multiple relations between doctors and patients. Each doctor and patient
+* can book multiple appointments with unique Appointment ID. */
 public class MakeAppointment extends AppCompatActivity {
     public String docId;
     public String curId;

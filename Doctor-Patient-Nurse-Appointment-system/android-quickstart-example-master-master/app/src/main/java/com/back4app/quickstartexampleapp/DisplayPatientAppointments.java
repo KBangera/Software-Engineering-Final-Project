@@ -24,6 +24,8 @@ import com.parse.ParseUser;
 import java.util.ArrayList;
 import java.util.List;
 
+/* Display the list of patient appointments. Each Appointment contains the details like
+ * Reason, time, date and Doctor Id */
 public class DisplayPatientAppointments  extends ListActivity implements AdapterView.OnItemClickListener {
     ListView mlistview;
     ArrayAdapter<String> adapter;
