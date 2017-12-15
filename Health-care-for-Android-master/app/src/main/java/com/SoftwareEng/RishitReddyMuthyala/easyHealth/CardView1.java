@@ -30,7 +30,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+/* 
+ * This class is for switching to Card View 1 Activity.
+ */
 public class CardView1 extends AppCompatActivity {
 
     RecyclerView recyclerView1;
@@ -53,7 +55,9 @@ public class CardView1 extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
-
+    /* 
+     * This method gets called upon the creation of the card view activity.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

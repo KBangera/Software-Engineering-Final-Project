@@ -13,7 +13,9 @@ import java.util.List;
 import java.util.Map;
 
 
-
+/* 
+ * This class holds the Donor view.
+ */
 public class MyFirebaseRecyclerAdapter1 extends FirebaseRecyclerAdapter<Donor, MyFirebaseRecyclerAdapter1.DonorViewHolder> {
 
     private Context mContext;
@@ -38,7 +40,9 @@ public class MyFirebaseRecyclerAdapter1 extends FirebaseRecyclerAdapter<Donor, M
 
     }
 
-
+    /* 
+     * This method populates the holder for donor view.
+     */
     @Override
     protected void populateViewHolder(MyFirebaseRecyclerAdapter1.DonorViewHolder donorViewHolder, Donor donor, int i) {
 

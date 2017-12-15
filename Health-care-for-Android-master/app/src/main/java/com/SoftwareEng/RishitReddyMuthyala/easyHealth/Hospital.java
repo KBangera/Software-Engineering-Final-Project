@@ -4,7 +4,9 @@ package com.SoftwareEng.RishitReddyMuthyala.easyHealth;
 import java.io.Serializable;
 
 
-
+/* 
+ * This class holds the details of the hospital.
+ */
 public class Hospital implements Serializable{
 
     String name;

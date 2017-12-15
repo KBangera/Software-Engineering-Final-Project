@@ -26,6 +26,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+/* 
+ * This class handles the map activity for the application.
+ */
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
@@ -39,7 +42,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     static final String TAG = "MapsActivity";
 
-
+    /* 
+     * This method gets called on creation of this activity.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,6 +86,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
+    /* 
+     * This method gets called on map change.
+     */
     public void onChangeMap(View view) {
         if (mMap.getMapType() == GoogleMap.MAP_TYPE_NORMAL) {
             mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
@@ -99,6 +107,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
+    /* 
+     * This method recognizes the speech input.
+     */
     public void promptSpeechInput()
     {
         Intent intent=new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
@@ -117,7 +128,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-
+    /* 
+     * This method gets called on activity result.
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -136,7 +149,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-
+    /* 
+     * This method gets called when the map is ready.
+     */
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;

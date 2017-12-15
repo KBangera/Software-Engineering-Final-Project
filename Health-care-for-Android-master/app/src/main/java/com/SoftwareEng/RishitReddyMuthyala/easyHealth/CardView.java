@@ -30,7 +30,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+/* 
+ * This class is for switching to Card View Activity.
+ */
 public class CardView extends AppCompatActivity {
 
     RecyclerView recyclerView;
@@ -54,7 +56,9 @@ public class CardView extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
-
+    /* 
+     * This method gets called upon the creation of this card view activity.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -133,7 +137,9 @@ public class CardView extends AppCompatActivity {
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
-
+    /* 
+     * This method is for item animation.
+     */
     public void itemAnimation() {
         //add item animation from wassbeef library
         //recyclerView.setItemAnimator();
@@ -154,7 +160,9 @@ public class CardView extends AppCompatActivity {
     }
 
 
-
+    /* 
+     * This method gets called up on the creation of options menu.
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_menu, menu);
@@ -192,8 +200,10 @@ public class CardView extends AppCompatActivity {
         }
 
 
+    /* 
+     * This method gets called upon the options item selction.
+     */
     @Override
-
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 

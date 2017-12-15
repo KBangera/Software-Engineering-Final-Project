@@ -3,7 +3,9 @@ package com.SoftwareEng.RishitReddyMuthyala.easyHealth;
 import android.view.View;
 
 
-
+/* 
+ * This is the interface for recycle click listener.
+ */
 public interface RecyclerClickListener {
 
     public void onItemClick(int position);

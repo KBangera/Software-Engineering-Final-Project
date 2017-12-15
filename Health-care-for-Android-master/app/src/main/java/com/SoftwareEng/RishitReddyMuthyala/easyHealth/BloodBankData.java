@@ -13,7 +13,9 @@ import java.util.List;
 import java.util.Map;
 
 
-
+/* 
+ * This class holds the blood bank data. It has database reference to fetch data from the firebase lkdatabase.
+ */
 public class BloodBankData {
 
     List<Map<String,?>> bloodBankList;
@@ -25,6 +27,9 @@ public class BloodBankData {
         myFirebaseRecyclerAdapter2 = mAdapter;
     }
 
+    /* 
+     * This method removes a value from bank data in the database server.
+     */
     public void removeItemFromServer(Map<String,?> bloodBank){
         if(bloodBank!=null){
             String id = (String)bloodBank.get("id");
@@ -32,6 +37,9 @@ public class BloodBankData {
         }
     }
 
+    /* 
+     * This method adds a value from bank data in the database server.
+     */
     public void addItemToServer(Map<String,?> bloodBank){
         if(bloodBank!=null){
             String id = (String) bloodBank.get("id");
@@ -39,9 +47,15 @@ public class BloodBankData {
         }
     }
 
+    /* 
+     * This method gets the firebase database reference.
+     */
     public DatabaseReference getFireBaseRef(){
         return mRef4;
     }
+    /* 
+     * This method sets context that needs to be used for the toast messages.
+     */
     public void setContext(Context context){mContext2 = context;}
 
     public List<Map<String, ?>> getBloodBankList() {
@@ -59,6 +73,9 @@ public class BloodBankData {
     }
 
 
+    /* 
+     * This method gets called upon the item removal from cloud.
+     */
     public void onItemRemovedFromCloud(HashMap item){
         int position = -1;
         String id=(String)item.get("id");
@@ -77,6 +94,9 @@ public class BloodBankData {
         }
     }
 
+    /* 
+     * This method gets called upon the addition of an item to the cloud.
+     */
     public void onItemAddedToCloud(HashMap item){
         int insertPosition = 0;
         String id=(String)item.get("id");
@@ -97,6 +117,9 @@ public class BloodBankData {
 
     }
 
+    /* 
+     * This method is called upon the item updation in the cloud.
+     */
     public void onItemUpdatedToCloud(HashMap item){
         String id=(String)item.get("id");
         for(int i=0;i<bloodBankList.size();i++){
@@ -112,6 +135,10 @@ public class BloodBankData {
         }
 
     }
+    
+    /* 
+     * This method intializes data from cloud.
+     */
     public void initializeDataFromCloud() {
         bloodBankList.clear();
         mRef4.addChildEventListener(new com.google.firebase.database.ChildEventListener() {
@@ -149,6 +176,9 @@ public class BloodBankData {
 
     }
 
+    /* 
+     * Constructor of this class.
+     */
     public BloodBankData(){
 
         bloodBankList = new ArrayList<Map<String,?>>();

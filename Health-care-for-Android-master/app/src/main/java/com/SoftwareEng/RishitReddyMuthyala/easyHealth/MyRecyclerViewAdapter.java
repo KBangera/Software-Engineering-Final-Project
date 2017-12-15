@@ -13,7 +13,9 @@ import java.util.List;
 import java.util.Map;
 
 
-
+/* 
+ * This class is for switching to recyler view.
+ */
 public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder> {
 
     private List<Map<String, ?>> dataSet;
@@ -35,7 +37,9 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     }
 
 
-
+    /* 
+     * This method gets the item view type.
+     */
     @Override
     public int getItemViewType(int position) {
         if(sortLayout)
@@ -72,7 +76,10 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
     }
 
-
+    /* 
+     * This class acts as the view holder.
+     */
+    
     public class ViewHolder extends RecyclerView.ViewHolder
     {
         public ImageView iv,popup;

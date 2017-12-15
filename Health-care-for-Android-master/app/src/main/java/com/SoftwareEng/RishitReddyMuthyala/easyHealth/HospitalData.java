@@ -13,7 +13,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+/* 
+ * This method is for switching to Card View Activity.
+ */
 public class HospitalData {
     List<Map<String,?>> hospitalList;
     DatabaseReference mRef;
@@ -24,6 +26,9 @@ public class HospitalData {
         myFirebaseRecylerAdapter = mAdapter;
     }
 
+    /* 
+     * This method gets called when the item is removed  from the server.
+     */
     public void removeItemFromServer(Map<String,?> hospital){
         if(hospital!=null){
             String id = (String)hospital.get("id");
@@ -31,6 +36,9 @@ public class HospitalData {
         }
     }
 
+    /* 
+     * This method gets called up on the item addition to the server.
+     */
     public void addItemToServer(Map<String,?> hospital){
         if(hospital!=null){
             String id = (String) hospital.get("id");
@@ -57,7 +65,9 @@ public class HospitalData {
         } else return null;
     }
 
-
+    /* 
+     * This method gets called when the item is removed from cloud.
+     */
     public void onItemRemovedFromCloud(HashMap item){
         int position = -1;
         String id=(String)item.get("id");
@@ -76,6 +86,9 @@ public class HospitalData {
         }
     }
 
+    /* 
+     * This method gets called when an item is added to the cloud.
+     */
     public void onItemAddedToCloud(HashMap item){
         int insertPosition = 0;
         String id=(String)item.get("id");
@@ -96,6 +109,9 @@ public class HospitalData {
 
     }
 
+    /* 
+     * This method gets called up on the updation of an item to the cloud.
+     */
     public void onItemUpdatedToCloud(HashMap item){
         String id=(String)item.get("id");
         for(int i=0;i<hospitalList.size();i++){
@@ -111,6 +127,10 @@ public class HospitalData {
         }
 
     }
+    
+    /* 
+     * This method is used for initializing data from cloud.
+     */
     public void initializeDataFromCloud() {
        hospitalList.clear();
         mRef.addChildEventListener(new com.google.firebase.database.ChildEventListener() {

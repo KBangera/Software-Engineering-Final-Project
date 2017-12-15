@@ -14,7 +14,9 @@ import java.util.List;
 import java.util.Map;
 
 
-
+/* 
+ * This class is used for saving donor data.
+ */
 public class DonorData {
 
     List<Map<String,?>> donorList;

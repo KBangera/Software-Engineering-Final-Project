@@ -14,7 +14,9 @@ import java.util.List;
 import java.util.Map;
 
 
-
+/* 
+ * This class holds the Blood bank view.
+ */
 public class MyFirebaseRecyclerAdapter2 extends FirebaseRecyclerAdapter<BloodBank, MyFirebaseRecyclerAdapter2.BloodBankViewHolder> {
 
     private Context mContext;
@@ -40,6 +42,9 @@ public class MyFirebaseRecyclerAdapter2 extends FirebaseRecyclerAdapter<BloodBan
     }
 
 
+    /* 
+     * This method populates the view holder for blood bank.
+     */
     @Override
     protected void populateViewHolder(MyFirebaseRecyclerAdapter2.BloodBankViewHolder bloodBankViewHolder, BloodBank bloodBank, int i) {
 

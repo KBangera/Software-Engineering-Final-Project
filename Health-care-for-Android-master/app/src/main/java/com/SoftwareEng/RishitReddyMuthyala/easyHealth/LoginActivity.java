@@ -19,7 +19,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import java.util.Arrays;
 
-
+/* 
+ * This class acts the back end bean class for the Login Activity.
+ */
 public class LoginActivity extends AppCompatActivity{
 
     EditText userNameET;
@@ -33,6 +35,9 @@ public class LoginActivity extends AppCompatActivity{
 
     Button bloodDonors;
 
+    /* 
+     * This method gets called upon the creation of Login Activity.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,7 +98,9 @@ public class LoginActivity extends AppCompatActivity{
         });
     }
 
-
+    /* 
+     * This method gets called on the result of the activity.
+     */
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         // RC_SIGN_IN is the request code you passed into startActivityForResult(...) when starting the sign in flow.

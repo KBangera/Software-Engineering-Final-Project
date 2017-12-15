@@ -20,7 +20,7 @@ import android.widget.TextView;
 import java.util.HashMap;
 
 
-/**
+/*
  * A simple {@link Fragment} subclass.
  */
 public class DonorDetailFragment extends android.support.v4.app.Fragment{
@@ -37,7 +37,9 @@ public class DonorDetailFragment extends android.support.v4.app.Fragment{
         m=new HashMap();
     }
 
-
+    /* 
+     * This method gets called up on the creation of donor detail.
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -91,6 +93,9 @@ public class DonorDetailFragment extends android.support.v4.app.Fragment{
 
     }
 
+    /* 
+     * This method gets maps.
+     */
     public void getMaps()
     {
         Log.d("something", "getMaps: ");
@@ -113,7 +118,9 @@ public class DonorDetailFragment extends android.support.v4.app.Fragment{
     }
 
 
-
+    /* 
+     * This method gets called up on the creation of options menu.
+     */
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
     {

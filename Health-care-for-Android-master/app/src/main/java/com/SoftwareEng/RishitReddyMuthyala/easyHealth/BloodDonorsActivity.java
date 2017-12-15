@@ -15,6 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 import java.util.Map;
 
+//Class to fetch the details of the donors
 public class BloodDonorsActivity extends AppCompatActivity {
 
     EditText firstName,lastName,contact,address,bloodGroup;
@@ -44,7 +45,9 @@ public class BloodDonorsActivity extends AppCompatActivity {
         });
     }
 
-
+    /* 
+     * This method gets called upon the creation of an account.
+     */
     public void onAccountCreate()
     {
         //Object ne=new Object();

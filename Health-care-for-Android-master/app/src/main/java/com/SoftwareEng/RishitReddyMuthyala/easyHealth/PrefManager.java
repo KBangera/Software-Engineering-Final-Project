@@ -3,8 +3,9 @@ package com.SoftwareEng.RishitReddyMuthyala.easyHealth;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-
-
+/* 
+ * This class acts as a prefeerence manager for the application.
+ */
 public class PrefManager {
     SharedPreferences pref;             // To see the this slider again, goto Settings -> apps -> this app -> clear data
     SharedPreferences.Editor editor;

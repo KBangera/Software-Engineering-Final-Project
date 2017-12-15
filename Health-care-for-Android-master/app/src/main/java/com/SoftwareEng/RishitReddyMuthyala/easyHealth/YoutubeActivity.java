@@ -9,6 +9,9 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
+/* 
+ * This class handles the youtube view activity which is used for playing ads.
+ */
 public class YoutubeActivity extends YouTubeBaseActivity  {
 
     YouTubePlayerView youTubePlayerView;
@@ -16,6 +19,9 @@ public class YoutubeActivity extends YouTubeBaseActivity  {
     Button button;
 
 
+    /* 
+     * This method will be called up on the creation of the Youtube activity.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +43,7 @@ public class YoutubeActivity extends YouTubeBaseActivity  {
             }
         };
 
+        // onClick listner
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

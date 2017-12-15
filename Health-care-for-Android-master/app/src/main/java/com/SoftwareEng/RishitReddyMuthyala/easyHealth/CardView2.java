@@ -31,7 +31,9 @@ import java.util.List;
 import java.util.Map;
 
 
-
+/* 
+ * This class is for maintaining second card view of the application.
+ */
 public class CardView2 extends AppCompatActivity {
 
     RecyclerView recyclerView2;
@@ -55,6 +57,9 @@ public class CardView2 extends AppCompatActivity {
     private GoogleApiClient client;
 
 
+    /* 
+     * This method gets calles upon the creation of this activity.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,6 +119,9 @@ public class CardView2 extends AppCompatActivity {
 
             }
 
+            /* 
+             * This method gets called upon the click of over flow in the menu.
+             */
             @Override
             public void onOverFlowMenuClick(View v, final int position) {
 
@@ -162,7 +170,9 @@ public class CardView2 extends AppCompatActivity {
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
-
+    /* 
+     * This method is for item animation.
+     */
     public void itemAnimation() {
         //add item animation from wassbeef library
         //recyclerView.setItemAnimator();
@@ -183,7 +193,9 @@ public class CardView2 extends AppCompatActivity {
     }
 
 
-
+    /* 
+     * This method gets called up on the creation of options menu.
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_menu, menu);
@@ -221,8 +233,10 @@ public class CardView2 extends AppCompatActivity {
     }
 
 
+    /* 
+     * This method gets called up on the item selection.
+     */
     @Override
-
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 

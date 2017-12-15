@@ -21,7 +21,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
 
-/**
+/*
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
  * {@link MovieDetailFragment.OnFragmentInteractionListener} interface
@@ -29,7 +29,7 @@ import java.util.HashMap;
  */
 
 
-/**
+/*
  * A simple {@link android.support.v4.app.Fragment} subclass.
  */
 public class HospitalDetailFragment extends android.support.v4.app.Fragment {
@@ -46,7 +46,9 @@ public class HospitalDetailFragment extends android.support.v4.app.Fragment {
         m=new HashMap();
     }
 
-
+    /* 
+     * This method gets called upon the creation of Hospital Detail Activity.
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -132,7 +134,9 @@ public class HospitalDetailFragment extends android.support.v4.app.Fragment {
     }
 
 
-
+    /* 
+     * This method gets called upon the creation of options menu.
+     */
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
     {

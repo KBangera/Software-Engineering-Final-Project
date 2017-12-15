@@ -18,12 +18,18 @@ import android.widget.ImageView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+/* 
+ * This class is the main activity of the application.
+ */
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     ImageView imageView;
     Button button;
 
+    /* 
+     * This method gets called on the creation of the main activity.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +66,9 @@ public class MainActivity extends AppCompatActivity
         });
     }
 
+    /* 
+     * This method gets called on the back press.
+     */
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -70,6 +79,9 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    /* 
+     * This method gets called on the creation of options menu.
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -77,6 +89,9 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    /* 
+     * This method gets selected when an item has been selected from the options menu.
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -90,6 +105,9 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+    /* 
+     * This method gets called up on the item selection in the navigation bar.
+     */
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -114,7 +132,9 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-
+    /* 
+     * This method is for switching to Card View Activity.
+     */
     public void switchToTask1()
     {
 
@@ -123,6 +143,9 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    /* 
+     * This method is for switching to second Card View Activity.
+     */
     public void switchToTask2()
     {
 
@@ -131,6 +154,9 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    /* 
+     * This method is for switching to third Card View Activity.
+     */
     public void switchToTask3()
     {
 

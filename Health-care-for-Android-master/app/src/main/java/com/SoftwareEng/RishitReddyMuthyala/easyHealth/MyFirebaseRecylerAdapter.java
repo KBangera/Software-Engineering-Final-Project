@@ -1,4 +1,4 @@
-package com.SoftwareEng.RishitReddyMuthyala.easyHealth; //change the package name to your project's package name
+package com.SoftwareEng.RishitReddyMuthyala.easyHealth;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -13,6 +13,9 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 import java.util.Map;
 
+/* 
+ * This class Firebase Recycler adapter holds the hospital view holder.
+ */
 public class MyFirebaseRecylerAdapter extends FirebaseRecyclerAdapter<Hospital, MyFirebaseRecylerAdapter.HospitalViewHolder> {
 
     private Context mContext;
@@ -30,7 +33,9 @@ public class MyFirebaseRecylerAdapter extends FirebaseRecyclerAdapter<Hospital, 
     }
 
 
-
+    /* 
+     * This method sets recycler click listner.
+     */
     public void setRecyclerClickListener(RecyclerClickListener recyclerClickListener)
     {
         this.recyclerClickListener=recyclerClickListener;
@@ -38,6 +43,9 @@ public class MyFirebaseRecylerAdapter extends FirebaseRecyclerAdapter<Hospital, 
     }
 
 
+    /* 
+     * This method populates view holder.
+     */
     @Override
     protected void populateViewHolder(HospitalViewHolder hospitalViewHolder, Hospital hospital, int i) {
 

@@ -18,6 +18,9 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+/* 
+ * This class acts as the welcome activity of the application.
+ */
 public class WelcomeActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private MyViewPagerAdapter myViewPagerAdapter;
@@ -27,6 +30,9 @@ public class WelcomeActivity extends AppCompatActivity {
     private Button btnSkip, btnNext,btnPrev;
     private PrefManager prefManager;
 
+    /* 
+     * This method will be called up on the creation of the Welcome activity.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -134,6 +140,9 @@ public class WelcomeActivity extends AppCompatActivity {
         return viewPager.getCurrentItem() + i;
     }
 
+    /* 
+     * This method launches home screen.
+     */
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
         startActivity(new Intent(WelcomeActivity.this, LoginActivity.class));
@@ -170,7 +179,7 @@ public class WelcomeActivity extends AppCompatActivity {
         }
     };
 
-    /**
+    /*
      * Making notification bar transparent
      */
     private void changeStatusBarColor() {
@@ -181,7 +190,7 @@ public class WelcomeActivity extends AppCompatActivity {
         }
     }
 
-    /**
+    /*
      * View pager adapter
      */
     public class MyViewPagerAdapter extends PagerAdapter {

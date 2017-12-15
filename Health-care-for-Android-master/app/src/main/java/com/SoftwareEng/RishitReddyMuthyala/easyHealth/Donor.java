@@ -2,7 +2,9 @@ package com.SoftwareEng.RishitReddyMuthyala.easyHealth;
 
 import java.io.Serializable;
 
-
+/* 
+ * This method is used for storing donor details.
+ */
 public class Donor implements Serializable{
 
     String firstname,lastname,contact,bloodgroup,address;
